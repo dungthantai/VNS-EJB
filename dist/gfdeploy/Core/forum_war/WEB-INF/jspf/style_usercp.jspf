@@ -1,0 +1,271 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+#usercp_content {
+width:100%;
+float:right;
+margin-left:-210px;
+margin-top:5px;
+padding-bottom:2em;
+}
+
+.usercp li {
+list-style:none;
+}
+
+.usercp td,th,p,li {
+font:10pt arial, verdana, geneva, lucida, "lucida grande", helvetica, sans-serif;
+}
+
+
+.usercp .page {
+background:#FFF;
+color:#333;
+}
+
+
+.usercp .block {
+clear:both;
+}
+
+#usercp_content .block {
+width:100%;
+display:block;
+float:left;
+}
+
+#usercp_content form.block {
+float:none;
+}
+
+#usercp_content h3, .blocksubhead {
+font-size:100%;
+font-weight:400;
+}
+
+.usercp .blockhead {
+background:url(http://vnsharing.site/forum/vbbdesign/vnsharing/tcat.gif) repeat-x scroll left top #0075C9;
+border:1px solid #0075C9;
+border-radius:0 0 0 0;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+color:#fff;
+font-size:12px;
+font-weight:700;
+height:16px;
+padding:7px 10px;
+margin: 0px;
+}
+
+
+.usercp .blockfoot,.blocksubfoot {
+display:block;
+clear:both;
+background:#fff none;
+border:0 #6c0;
+padding:5px 0;
+}
+
+
+.usercp .actionbuttons .group .button {
+cursor:pointer;
+font:bold 11px Tahoma, Calibri, Verdana, Geneva, sans-serif;
+border:1px solid #a8a8a8;
+color:#424242;
+background:#e9e9e9 url(http://vnsharing.site/forum/images/gradients/generic_button.png) repeat-x top left;
+padding:2.5px 5px;
+}
+
+.usercp .blocksubhead {
+font:normal 12px;
+color:#3e3e3e;
+background:#e9e9e9 none repeat-x;
+border-top:1px solid #cecece;
+padding:4px 10px;
+margin: 0px;
+}
+
+.usercp .formcontrols .blocksubhead {
+font-weight:700;
+}
+
+.usercp .formcontrols .blockrow {
+background:#FFF none repeat-x center bottom;
+border-top:solid 1px #cedfeb;
+padding:10px 5px;
+}
+
+.usercp .floatcontainer::after,
+.usercp .formcontrols .blockrow::after,
+.usercp dl.stats::after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+.usercp .formcontrols > :first-child,
+.usercp .formcontrols .blocksubhead + .blockrow,
+.usercp .formcontrols .section :first-child.blockrow {
+border-top:none;
+}
+
+.usercp .formcontrols .section {
+padding:0 15px;
+}
+
+.usercp .blockrow {
+background:none none;
+padding:5px 10px;
+}
+
+.usercp .floatcontainer,.formcontrols .blockrow,
+.usercp dl.stats {
+font-weight:400;
+display:block;
+}
+
+.usercp .formcontrols .blockrow .description {
+color:#777;
+font-size:11px;
+max-width:496px;
+margin-left:212px;
+overflow:hidden;
+line-height:150%;
+margin-bottom:5px;
+}
+
+.usercp .formcontrols .blockrow .group li {
+margin-top:5px;
+}
+
+.usercp .formcontrols .blockrow label,
+.usercp .formcontrols .blockrow .multifield.group label,
+.usercp .formcontrols .blockrow .groupoption label {
+display:block;
+margin-bottom:2px;
+}
+
+.usercp .formcontrols .blockrow label {
+width:212px;
+float:left;
+font-size:13px;
+}
+
+.usercp .formcontrols .blockrow .group li label,
+.usercp .formcontrols .blockrow .group dt label {
+width:212px;
+float:left;
+}
+
+#usercp_nav {
+float:left;
+width:200px;
+margin-right:10px;
+margin-top:5px;
+}
+
+#usercp_nav .block {
+font-size:12px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-topleft:5px;
+-webkit-border-top-right-radius:5px;
+-webkit-border-top-left-radius:5px;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+padding-bottom:10px;
+clear:none;
+}
+
+#usercp_nav .blockhead {
+-moz-border-radius-topright:5px;
+-moz-border-radius-topleft:5px;
+-webkit-border-top-right-radius:5px;
+-webkit-border-top-left-radius:5px;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+}
+
+#usercp_nav h2.blockhead {
+font-weight:600;
+margin: 0px;
+}
+
+#usercp_nav .blockbody {
+border:1px solid #5a7f97;
+border-top:none;
+background:#fafafa none;
+}
+
+#usercp_nav li {
+position:relative;
+}
+
+#usercp_nav .blocksubhead {
+font:normal 12px;
+color:#3e3e3e;
+background:#e9e9e9 none repeat-x;
+border-top:none;
+padding:4px 10px;
+margin:0px;
+}
+
+#usercp_nav .blockrow {
+background:#fafafa none;
+padding:0;
+}
+
+#usercp_nav li a {
+display:block;
+padding:0 10px 0 30px;
+}
+
+#usercp_nav .blockrow * a {
+line-height:2em;
+text-decoration:none;
+}
+
+
+.usercp .usercpimage {
+display:inline;
+margin-top:-2px;
+}
+
+#usercp_nav hr {
+width:80%;
+background:#cecece;
+height:1px;
+color:#cecece;
+}
+
+#usercp_nav li a.usercp_folder-left {
+background:transparent url(http://vnsharing.site/forum/images/cms/sections.png) no-repeat 10px 4px;
+}
+
+
+.usercp #usercp_content > div,
+#usercp_content > form,
+#usercp_content .cp_content {
+margin-left:210px;
+}
+
+.usercp .formcontrols,.settings_form_border.blockbody {
+border-right:1px solid #6B91AB;
+border-left:1px solid #6B91AB;
+border-bottom:1px solid #6B91AB;
+}
+
+.usercp a:link {
+color:#0059bd;
+text-decoration:none;
+}
+
+.usercp .blocksubhead img,.usercp #usercp_nav .blocksubhead img {
+vertical-align:middle;
+}
+.usercp ul {
+	padding: 0px;
+	margin: 0px;
+}                                                                                                                                 }

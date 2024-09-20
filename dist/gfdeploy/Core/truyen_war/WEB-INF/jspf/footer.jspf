@@ -1,0 +1,37 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
+<div class="clear"></div>
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a href="https://www.facebook.com/CTDvnsharing" target="_blank"><i class="fa fa-facebook"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a href="http://skyrule.net/">Forum</a>
+            ·
+            <a href="${initParam['siteurl']}">Truyện dịch</a>
+        </p>
+
+        <p>Vnsharing &copy; 2015 | Powered by dungthantai </p>
+    </div>
+
+</footer>
+
+<div class="bookmark">
+    <div class="title">
+        <span><br/><br/><br/>B<br/>O<br/>O<br/>K<br/><br/>M<br/>A<br/>R<br/>K</span>
+    </div>
+    <div class="content">
+        <c:forEach items="${bookmarks}" var="bookmark">
+        </c:forEach>
+    </div>
+</div>

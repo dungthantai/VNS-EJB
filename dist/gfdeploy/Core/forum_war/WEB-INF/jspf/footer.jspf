@@ -1,0 +1,52 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="clear"></div>
+<div align="center">
+	<div class="smallfont" align="center">
+		<b>Bản quyền oOo VnSharing Group oOo © 2016</b>
+		<br>Powered by: dungthantai</br>
+	</div>
+	<div class="smallfont" align="center">
+		<!-- Do not remove  or your scheduled tasks will cease to function -->
+		<!-- Do not remove  or your scheduled tasks will cease to function -->
+	</div>
+</div>
+<form action="index.php" method="get">
+	<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page" align="center">
+		<tbody>
+			<tr>
+				<td class="foot">
+					<img src="${initParam['imageurl']}thay-skin.png">
+					<select name="styleid" onchange="switch_id(this, 'style')">
+						<optgroup label="Xin Chọn Giao Diện">
+							<option value="17" class="">-- Grassland in night</option>
+							<option value="15" class="" selected="selected">-- Clear Sky</option>
+							<option value="21" class="">-- Mobile Style</option>
+						</optgroup>
+					</select>
+				</td>
+				<td class="foot" align="right" width="100%">
+					<div class="smallfont">
+						<strong>
+						<a href="mailto:dungthantai@gmail.com" rel="nofollow" accesskey="9">Liên Lạc</a> -
+						<a href="${initParam['siteurl']}">oOo VnSharing - Share All We Have oOo</a> -
+						<a href="#top" onclick="self.scrollTo(0, 0); return false;">Trở Lên Trên</a>
+						</strong>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+</form>
+<center></center>
+<table width="100%" border="0" cellspacing="0" cellpadding="00">
+	<tbody>
+		<tr>
+			<td align="right" background="${initParam['imageurl']}bgfooter.jpg">
+				<img src="${initParam['imageurl']}footer.jpg">
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,148 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+<div class="container">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+        <tbody>
+            <tr>
+                <td align="left" width="75%" style="background: url(${initParam['imageurl']}bannerCS-15-bg.jpg) repeat-x scroll 0% 0% transparent;">
+                    <div align="left" width="auto">
+                        <a href="/forum">
+                            <img src="${initParam['imageurl']}bannerCS-15.jpg" border="0" alt="oOo VnSharing oOo" title="oOo VnSharing oOo">
+                        </a>
+                    </div>
+                </td>
+
+                <td valign="top" style="background: url(${initParam['imageurl']}bannerCS-15-bg.jpg) repeat-x scroll 0% 0% transparent;">
+                    <div class="login_bg">
+                        <c:choose>
+                            <c:when  test="${empty user.id}">
+                                <form action="${initParam['siteurl']}login" method="post" name="form_login" id="login-vds">
+                                    <label for="navbar_username">Ký danh ${user.displayName}</label><br>
+                                    <input value="${user.displayName}" type="text" class="bginput" style="font-size: 11px" name="username" id="navbar_username" size="10" accesskey="u" tabindex="101" placeholder="Ký danh">
+                                    <label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c">Ghi Nhớ?</label><br>
+                                    <label for="navbar_password">Mật mã</label><br>
+                                    <input type="password" class="bginput" style="font-size: 11px" name="password" id="navbar_password" size="10" tabindex="102">
+                                    <input type="submit" class="button" value="Ðăng Nhập" name="login" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s">
+                                </form>
+                            </c:when>
+
+                            <c:otherwise>
+                                <p><strong>Chào bạn, <a href="${initParam['siteurl']}member/${user.id}">${user.displayName}</a></strong></p>
+                                <p class="lastLogin">Lần đăng nhập cuối: Hôm qua 21:10</p>
+                                <a href="${initParam['siteurl']}usercp/">Tùy chỉnh</a> <span class="header_separator">&nbsp;</span>
+                                <a class="popupctrl" href="${initParam['siteurl']}usercp/" id="yui-gen1">Hộp thư đến</a>
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+                </td>
+
+
+
+            </tr>
+        </tbody>
+    </table>
+    <center>
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr border="0">
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a target="_blank" href="http://truyen.vnsharing.vn" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1', '', 'images/truyendichholder.jpg', 1)"><img src="${initParam['imageurl']}truyendich.jpg" alt="Manga dịch sang Tiếng Việt" name="Image1" border="0" id="Image1" title="Manga dịch sang Tiếng Việt"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a href="${initParam['siteurl']}showthread.php?t=31075" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2', '', 'images/vietsubholder.jpg', 1)"><img src="${initParam['imageurl']}vietsub.jpg" alt="Anime phụ đề Tiếng Việt" name="Image2" border="0" id="Image2" title="Anime phụ đề Tiếng Việt"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a href="${initParam['siteurl']}showthread.php?t=1829" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3', '', 'images/mangalistholder.jpg', 1)"><img src="${initParam['imageurl']}mangalist.jpg" alt="Manga Tiếng Anh" name="Image3" border="0" id="Image3" title="Manga Tiếng Anh"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a href="${initParam['siteurl']}showthread.php?t=2438" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4', '', 'images/animelistholder.jpg', 1)"><img src="${initParam['imageurl']}animelist.jpg" alt="Anime phụ đề Tiếng Anh" name="Image4" border="0" id="Image4" title="Anime phụ đề Tiếng Anh"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a href="http://vietsub.vnsharing.net" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7', '', 'images/animeonlineholder.jpg', 1)"><img src="${initParam['imageurl']}animeonline.jpg" alt="Xem Anime Online" name="Image7" border="0" id="Image7" title="Xem Anime Online"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a target="_blank" href="http://game.vnsharing.net" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5', '', 'images/clubsholder.jpg', 1)"><img src="${initParam['imageurl']}clubs.jpg" alt="Cổng Game" name="Image5" border="0" id="Image5" title="Cổng Game"></a></td>
+                    <td width="32" cellspacing="0" cellpadding="0" class="menu_header"><a href="${initParam['siteurl']}usercp.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6', '', 'images/usercpholder.jpg', 1)"><img src="${initParam['imageurl']}usercp.jpg" alt="UserCP" name="Image6" border="0" id="Image6" title="UserCP"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <table width="100%" class="menu_header2" height="27" border="0" cellpadding="00" cellspacing="0">
+        <tbody>
+            <tr width="100%" class="menu_header2" height="27" border="0" cellpadding="00" cellspacing="0">
+                <td align="center">
+                    <div id="pun-navlinks">
+                        <a href="/forum"><img src="${initParam['imageurl']}home.gif"></a>
+                        <img src="${initParam['imageurl']}faq.gif">
+                        <img src="${initParam['imageurl']}search.gif">
+                        <img src="${initParam['imageurl']}newpost.gif">
+                        <c:if test="${not empty user.id}">
+                            <a href="${initParam['siteurl']}logout"><img src="${initParam['imageurl']}logout.gif"></a>
+                            </c:if>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" id="header_right_cell">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</br> 
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+    <tbody><tr>
+            <td class="alt1" width="100%">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr valign="bottom">
+                            <td><a href="${initParam['siteurl']}"><img src="${initParam['imageurl']}favicon.ico" alt="Go Back" border="0" title="Go Back"></a></td>
+                            <td>&nbsp;</td>
+                            <td width="100%">
+                                <c:forEach items="${treeboxs}" var="tree" varStatus="state">
+                                    <c:if test="${not state.last}">
+                                        <span class="navbar"><a href="${initParam['siteurl']}box/${tree.id}">${tree.title}</a> &gt; </span>
+                                    </c:if>
+                                </c:forEach>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><img class="inlineimg" src="${initParam['imageurl']}navbits_finallink_ltr.gif" border="0">
+                                <span class="navbar"><b> ${treeboxs[fn:length(treeboxs)-1].title} </b></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody></table>
+</br> 
+<div align="center">
+    <a target="blank" href="${initParam['siteurl']}showthread.php?t=50284"><font size="3"><b>HD cho người mới | </b></font></a><a target="blank" href="${initParam['siteurl']}showthread.php?t=9138"><font size="3"><b>ĐĂNG KÍ VIP MEMBER: KHÔNG QUẢNG CÁO, KHÔNG CẦN POST BÀI ĐỂ DOWNLOAD!</b></font></a>
+    <div style="width: 900px; clear: both; margin-top: 5px;margin-bottom:5px">
+        <img height="50px" border="0" alt="" src="${initParam['imageurl']}560381p.png" style="vertical-align: middle;">
+        <a href="${initParam['siteurl']}forumdisplay.php?f=571"><font size="4" color="DarkOrange"><b>Mua sắm bằng Rep!</b></font></a>&nbsp;|&nbsp;<a href="${initParam['siteurl']}vnsshop.php"><font size="4" color="DarkOrange"><b>VnSharing Shop</b></font></a>&nbsp;&nbsp;
+        <img height="50px" border="0" alt="" src="${initParam['imageurl']}4227031facebook.png" style="vertical-align: middle;">
+        <a target="_blank" href="http://facebook.com/vnsharing"><font size="4" color="DarkOrange"><b>Facebook</b></font></a>
+    </div>
+    <p>
+        <br>
+        <a href="${initParam['siteurl']}showthread.php?t=480923"><font size="4" color="red"><b>Cách hạn chế không bị Mediafire xóa file | </b></font></a> <a href="${initParam['siteurl']}showthread.php?t=481181"><font size="4" color="red"><b>Xài Minus thay Mediafire</b></font></a>
+        <br>
+        <a href="${initParam['siteurl']}forumdisplay.php?f=1411"><font size="4" color="red"><b>Xây dựng VnSharing Torrent</b></font></a> | <a href="${initParam['siteurl']}showthread.php?t=492077"><font size="4" color="red"><b>Range rep thưởng cho torrent</b></font></a>
+        <br>
+        <a href="${initParam['siteurl']}showthread.php?t=520464"><font size="4"><b>Tuyển mod cho box Hình</b></font></a>
+    </p>
+</div>
+
+<c:if test="${empty user.id}">
+    <div style="padding: 0px 10px; ">
+        <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+            <tbody>
+                <tr>
+                    <td class="tcat">Chào mừng bạn đến với oOo VnSharing oOo.</td>
+                </tr>
+                <tr>
+                    <td class="alt1">
+                        <span class="smallfont">
+                            » Để có thể tham gia thảo luận, các bạn phải đăng ký làm thành viên, <strong><a href="${initParam['siteurl']}register">click vào đây để đăng ký</a></strong>.<br>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</c:if>

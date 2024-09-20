@@ -1,0 +1,98 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
+<div id="head">
+    <div class="status">
+        <div id="topHolderBox">
+            <img src="${initParam['imgurl']}user-small.png" alt="logo_user">
+            <a href="http://truyen.skyrule.net/account/">Đăng nhập</a> 
+            hoặc 
+            <a href="http://skyrule.net/register">Đăng kí</a>
+        </div>
+
+        <div class="clear"></div>
+
+        <script type="text/javascript">
+            function showResult(str) {
+                if (str.length == 0) {
+                    document.getElementById("result_box").innerHTML = "";
+                    $("#result_box").css("display", "none");
+                    return;
+                }
+                if (window.XMLHttpRequest) {
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        $("#result_box").css("display", "block");
+                        if (xmlhttp.responseText == "") {
+                            document.getElementById("result_box").innerHTML = "Éo tìm thấy";
+                        } else {
+                            var ob = JSON.parse(xmlhttp.responseText);
+                            var returnstring = "";
+                            $.each(ob.comic, function (k, v) {
+                                returnstring += "<a href = " + v.href + ">" + v.name + "</a>";
+                            });
+                            document.getElementById("result_box").innerHTML = returnstring;
+                        }
+
+                    }
+                }
+                xmlhttp.open("GET", "http://truyen.vnsharing.vn/api/reader/search/stub/" + str, true);
+                xmlhttp.send();
+            }
+        </script>
+
+        <form id="formSearch" method="post" action="/search">
+            <p>
+                <input size="40" id="keyword" name="search" class="text" autocomplete="off" onkeyup="showResult(this.value)">
+                <select id="selectSearch">
+                    <option value="Manga" selected="selected">Series Name</option>
+                </select>
+                <input id="imgSearch" type="image" src="${initParam['imgurl']}search.png" class="button">
+            </p>
+            <div id="result_box" style="display:none;">
+            </div>
+        </form>
+
+    </div>
+    <a href="${initParam['siteurl']}" class="logo"></a>
+</div>
+
+<div class="clear"></div>	
+
+<div id="headnav">
+    <div id="navbar">
+        <div id="navcontainer">
+            <ul>
+                <li id="liHome"><a href="${initParam['siteurl']}">Trang chủ 
+                    </a></li>
+                <li id="liDS"><a href="${initParam['siteurl']}directory">Danh sách</a></li>
+                <li id="liRequest"><a href="http://skyrule.net/threads/hòm-thư-góp-ý-ctd.9/" target="_blank">Góp ý</a></li>
+                <li id="liUpload"><a target="_blank" href="${initParam['siteurl']}">Upload</a></li>
+                <li id="liTutorial"><a target="_blank" href="http://skyrule.net/threads/hướng-dẫn-sử-dụng-và-upload-cổng-truyện-dịch-skyrule.7/">Huớng dẫn</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var path = window.location.pathname.slice(1, 4);
+        if (path == '')
+            $('#liHome a').attr('id', 'currentTab');
+        else if (path == 'hid' || path == 'Sta' || path == 'Gen' || path == 'Aut' || path == 'ser' || path == 'sea' || path == 'new' || path == 'rea')
+            $('#liDS a').attr('id', 'currentTab');
+        else if (path == 'Guide')
+            $('#liGuide a').attr('id', 'currentTab')
+        else
+            $('#navcontainer a[href*="' + path + '"]').attr('id', 'currentTab');
+    </script>
+    <div id="navsubbar">
+        <p>
+            Thông tin truyện :
+        </p>
+    </div>
+</div>

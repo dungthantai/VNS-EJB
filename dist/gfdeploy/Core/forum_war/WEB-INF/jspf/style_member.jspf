@@ -1,0 +1,505 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+.spanclear{
+display:block;height:0px;clear:both;visibility:hidden;
+}
+fieldset {
+display: block;
+-webkit-margin-start: 2px;
+-webkit-margin-end: 2px;
+-webkit-padding-before: 0.35em;
+-webkit-padding-start: 0.75em;
+-webkit-padding-end: 0.75em;
+-webkit-padding-after: 0.625em;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+min-width: -webkit-min-content;
+border: 2px groove threedface;
+}
+
+.usercp{
+padding: 0px 10px; 
+}
+
+.right_usercp{
+width:250px;float:right;
+}
+.left_usercp{
+width:100%;float:left;margin-right:-256px;
+}
+.left_usercp > div{
+margin-right:256px;
+}
+
+.usercp .info{
+display:block;margin-bottom:20px;
+}
+
+.usercp .info table{
+border-collapse:separate;border-spacing:0px;width:100%;border-width: 0px; border-style: outset; border-color: #999;
+}
+
+.usercp .info table td{
+width:100%;vertical-align:top;color:rgb(51, 51, 51);font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 0px; 
+}
+
+.usercp .info table td>div{
+float:right;
+}
+.usercp .info .rep{
+margin-bottom:6px;text-align:right;
+}
+.usercp .info .rep img, .usercp .info table td>div>h1 img{
+vertical-align:middle;border-width: 0px;
+}
+
+.usercp .info table td>div>h1{
+font-size:18pt;font-weight:normal;margin: 0px;
+}
+.usercp .info table td>div>h2{
+font-size:10pt;font-weight:normal;margin: 0px;
+}
+
+.usercp .info>div{
+background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);margin-bottom:6px;border-width: 1px; border-style: solid; padding: 1px; border-color: rgb(0, 117, 201);
+}
+.usercp .info>div>ul{
+background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;list-style-type:none;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 4px;
+}
+.usercp .info>div>ul>li{
+color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;float:left;margin-right:10px;white-space:nowrap;font-weight:normal;background-color: transparent; cursor:pointer;"><a href="https://archive.is/o/HWaTz/http://vnsharing.net/forum/member.php?u=${user.id}contactinfo" style="color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .info>div>ul>li>img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .info>div>div{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;border-width: 0px medium medium; margin: 1px 0px 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .info>ul{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);list-style-type:none;display:none;border-width: 1px; border-style: solid; margin: 0px; padding: 0px; border-color: rgb(236, 236, 236);
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .info>ul>li{
+                                                                                                                                                                                                        background-color: rgb(239, 239, 239); color:rgb(51, 51, 51);font:normal normal normal 11px/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;cursor:pointer;white-space:nowrap;margin: 0px 1px 1px; padding: 0px 4px 0px 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .info>ul>li a{
+                                                                                                                                                                                                        direction:ltr;color:rgb(0, 0, 0);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .info>ul>li img{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;vertical-align:middle;padding: 4px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .info>ul>li:first-child{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;white-space:nowrap;background-position: 0% 0%; background-repeat: repeat-x; margin: 1px; padding: 4px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab>ul{
+                                                                                                                                                                                                        position:relative;top:0px;left:0px;overflow-x:hidden;overflow-y:hidden;height:29px;list-style: none outside none; margin: 0px; padding: 0px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab>ul>li{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;float:left;margin-left:0px;margin-right:1px;white-space:nowrap;overflow-x:hidden;overflow-y:hidden;position:relative;cursor:pointer;font-weight:normal;top:5px;width:73px;display:block;background-repeat: repeat-x; border-width: 1px; border-style: solid; padding: 4px; border-color: rgb(0, 117, 201);
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab>ul>li:first-child{
+                                                                                                                                                                                                        width: 120px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab>ul>li.selected{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}tcat.gif);background-color: rgb(0, 117, 201); color:rgb(255, 255, 255);font:normal normal bold 10pt/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;height:1.5em;font-weight:bold;font-size:10pt; border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(0, 117, 201) rgb(0, 117, 201) white;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .blue_space{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}tcat.gif);background-color: rgb(0, 117, 201); color:rgb(255, 255, 255);font:normal normal bold 10pt/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;margin-top:-1px;clear:both;background-position: 0px -28px; background-repeat: repeat-x; border-width: 1px 1px 0px; border-style: solid solid none; padding: 4px; border-color: rgb(0, 117, 201) rgb(0, 117, 201) white; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab>div{
+                                                                                                                                                                                                        background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);margin-bottom:6px;display:none;border-width: 1px; border-style: solid; padding: 1px; border-color: rgb(0, 117, 201);
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage>div{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .info{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage ol{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;list-style-type:none;border-width: medium; border-style: none; margin: 1px 0px 0px; padding: 6px; border-color: white;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage ol li{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;margin-bottom:6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_img{
+                                                                                                                                                                                                        text-align:center;width:60px;margin-right:6px;float:left;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_img a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_img img{
+                                                                                                                                                                                                        height:54px;width:60px;background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;border-width: 0px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message{
+                                                                                                                                                                                                        margin-left:66px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .desc{
+                                                                                                                                                                                                        background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);margin-bottom:6px;border-width: 1px 0px 0px; border-style: solid; border-color: rgb(0, 117, 201); 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .desc>div{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .desc>div>div{
+                                                                                                                                                                                                        float:right;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .desc>div>div span{
+                                                                                                                                                                                                        color:rgb(85, 85, 85);
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .desc>div>a{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message .content{
+                                                                                                                                                                                                        overflow-x:auto;overflow-y:auto;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message ul{
+                                                                                                                                                                                                        list-style-type:none;text-align:right;margin: 6px 0px 0px; padding: 0px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message ul li{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;margin-bottom:6px;display:inline;margin-left:6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .user_message ul li a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;margin: 1px 0px 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged>table{
+                                                                                                                                                                                                        border-collapse:separate;border-spacing:0px;width:100%;border-width: 0px; border-style: outset; border-color: #999;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged>table>tr{
+                                                                                                                                                                                                        vertical-align:bottom;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged>table>tr>td{
+                                                                                                                                                                                                        color:rgb(0, 0, 0);font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab{
+                                                                                                                                                                                                        border-collapse:separate;border-spacing:1px;background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);border-width: 1px; border-style: solid; border-color: rgb(0, 117, 201);
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab td{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;padding: 2px 4px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab td span{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab td a{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab td:first-child{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}tcat.gif);background-color: rgb(0, 117, 201); color:rgb(255, 255, 255);font:normal normal bold 11px/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;font-weight:normal;background-position: 0% 0%; background-repeat: repeat-x; padding: 2px 4px; 
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .membermessage .paged .paged_tab td:last-child{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}tcat.gif);background-color: rgb(0, 117, 201); color:rgb(255, 255, 255);font:normal normal bold 11px/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;cursor:pointer;background-position: 0% 0%; background-repeat: repeat-x; padding: 2px 4px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>h4{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:none;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>h4>a{
+                                                                                                                                                                                                        float:right;color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>h4 img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div>ul{
+                                                                                                                                                                                                        list-style-type:none;margin: 0px; padding: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div li{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;font-weight:bold;margin-top:6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div dl{
+                                                                                                                                                                                                        list-style-type:none;font-weight:normal;margin: 6px 16px 0px; padding: 0px; 
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div dt{
+                                                                                                                                                                                                        color:rgb(119, 119, 119);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div dd{
+                                                                                                                                                                                                        margin-bottom:6px;margin-left:0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div fieldset{
+                                                                                                                                                                                                        width:130px;float:left;background-image:url(${initParam['imageurl']}https://archive.li/HWaTz/0cb600e310be9864ac506c3bb8a86c7b138c9cb1.jpg);background-color: transparent;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div legend{
+                                                                                                                                                                                                        color:rgb(0, 100, 0);font:normal normal normal 11px/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div legend a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div fieldset div{
+                                                                                                                                                                                                        text-align:center;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .aboutme>div>div fieldset img{
+                                                                                                                                                                                                        height:100px;width:100px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .selected{
+                                                                                                                                                                                                        display:block !important;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .clear{
+                                                                                                                                                                                                        clear:both;
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat>h4{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:none;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat>h4 a{
+                                                                                                                                                                                                        float:right;color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat>h4 img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat>div>div{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat fieldset{
+                                                                                                                                                                                                        margin-top:6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat legend{
+                                                                                                                                                                                                        color:rgb(0, 100, 0);font:normal normal normal 11px/normal tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .stat fieldset ul{
+                                                                                                                                                                                                        list-style-type:none;margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .stat fieldset li{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;margin-bottom:3px;"><span style="color:rgb(119, 119, 119);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .stat fieldset li span{
+                                                                                                                                                                                                        color:rgb(119, 119, 119);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .stat fieldset li a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>h4{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:none;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>h4 a{
+                                                                                                                                                                                                        float:right;color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>h4 img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div table{
+                                                                                                                                                                                                        border-collapse:separate;border-spacing:1px;width:100%;background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);border-width: 1px; border-style: solid; border-color: rgb(0, 117, 201);
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td {
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); 
+                                                                                                                                                                                                        color:rgb(0, 0, 0);
+                                                                                                                                                                                                        font-size:10pt;
+                                                                                                                                                                                                        padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td:nth-child(2) {
+                                                                                                                                                                                                        width:50%;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td:nth-child(3) {
+                                                                                                                                                                                                        white-space:nowrap;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td:nth-child(4) {
+                                                                                                                                                                                                        width:50%;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td:nth-child(2) a{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr:first-child td, .usercp .multi_tab .reputation>div tr:last-child td {
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif); color:rgb(51, 51, 51);
+                                                                                                                                                                                                        font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        background-position: 0% 0%; background-repeat: repeat-x; padding: 4px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .reputation>div tr td span{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>h4{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:none;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>h4 a{
+                                                                                                                                                                                                        float:right;color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>h4 img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div>div{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div ul{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;list-style-type:none;margin: 1px 0px 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;margin-top:6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li table{
+                                                                                                                                                                                                        border-collapse:separate;border-spacing:0px;border-width: 0px; border-style: outset; border-color: #999;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:first-child{
+                                                                                                                                                                                                        vertical-align:top;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:last-child{
+                                                                                                                                                                                                        vertical-align:bottom;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:first-child td:first-child{
+                                                                                                                                                                                                        color:rgb(0, 0, 0);font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 0px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:first-child td:first-child div{
+                                                                                                                                                                                                        text-align:center;width:60px;margin-right:6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:first-child td:first-child a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:first-child td:first-child img{
+                                                                                                                                                                                                        height:60px;width:60px;background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;border-width: 0px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:last-child td:last-child{
+                                                                                                                                                                                                        width:100%;color:rgb(0, 0, 0);font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 0px; 
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:last-child td:last-child div{
+                                                                                                                                                                                                        background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);margin-bottom:6px;border-width: 1px 0px 0px; border-style: solid; border-color: rgb(0, 117, 201); 
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist>div li tr:last-child td:last-child ul{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;list-style-type:none;margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist .name{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist .name a{
+                                                                                                                                                                                                        font-size:14pt;color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .multi_tab .friendlist .desc{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp>div{
+                                                                                                                                                                                                        background-color: rgb(227, 227, 227); color:rgb(0, 0, 0);margin-bottom:6px;border-width: 1px; border-style: solid; padding: 1px; border-color: rgb(0, 117, 201);
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp>div h4{
+                                                                                                                                                                                                        background-image:url(${initParam['imageurl']}thead2.gif);background-color: rgb(255, 255, 255); color:rgb(51, 51, 51);font:normal normal bold 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;background-position: 0% 0%; background-repeat: repeat-x; margin: 0px; padding: 6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp>div h4 a{
+                                                                                                                                                                                                        float:right;color:rgb(51, 51, 51);text-decoration:none;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp>div h4 img{
+                                                                                                                                                                                                        border-width: 0px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child>div>div:first-child{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;display:block;margin: 1px 0px 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child>div>div:last-child{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;text-align:right;margin: 1px 0px 0px; padding: 4px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child>div>div:last-child a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child table{
+                                                                                                                                                                                                        border-collapse:separate;border-spacing:0px;border-width: 0px; border-style: outset; border-color: #999;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child tr{
+                                                                                                                                                                                                        vertical-align:top;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child td:first-child{
+                                                                                                                                                                                                        width:100%;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child td{
+                                                                                                                                                                                                        color:rgb(0, 0, 0);font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;padding: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child td img{
+                                                                                                                                                                                                        height:59px;width:60px;background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child dl{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;list-style-type:none;font-size:11px;margin: 0px; padding: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child dt{
+                                                                                                                                                                                                        color:rgb(119, 119, 119);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp>div:first-child dd{
+                                                                                                                                                                                                        margin-bottom:3px;margin-left:16px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp .title{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;margin: 1px 0px 0px; padding: 6px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .list{
+                                                                                                                                                                                                        background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;display:block;text-align:right;margin: 1px 0px 0px; padding: 4px;
+                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                        .usercp .right_usercp .title>div{
+                                                                                                                                                                                                        padding-bottom:6px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .usercp .right_usercp .title ul{
+                                                                                                                                                                                                        list-style-type:none;margin: 0px; padding: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .title li{
+                                                                                                                                                                                                        font:normal normal normal 10pt/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;height:105px;width:75px;overflow-x:hidden;overflow-y:hidden;float:left;text-align:center;margin: 1px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .title li a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .title li img{
+                                                                                                                                                                                                        height:66px;width:60px;background-color: rgb(255, 255, 255); color:rgb(0, 0, 0);font-size:10pt;border-width: 0px;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .title li div{
+                                                                                                                                                                                                        font:normal normal normal 11px/normal arial, verdana, geneva, lucida, 'lucida grande', helvetica, sans-serif;
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                        .usercp .right_usercp .list a{
+                                                                                                                                                                                                        color:rgb(0, 89, 189);text-decoration:none;
+                                                                                                                                                                                                        }
